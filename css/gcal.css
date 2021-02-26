@@ -1,0 +1,162 @@
+* {
+    margin: 0 auto;
+}
+
+
+footer,
+nav,
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/* 媒体查询 @media */
+@media (min-width:1201px) and (max-width:1920px)  { 
+    header,
+    footer,
+    nav,
+    #tc2,
+    .container {
+        width: 88%; 
+    }
+}
+@media (min-width:1024px) and (max-width:1200px)   {
+    header,
+    footer,
+    nav,
+    #tc2,
+    .container {
+        width: 85%; 
+    }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    header,
+    footer,
+    nav,
+    #tc2,
+    .container {
+        width: 80%; 
+    }
+}
+@media (max-width:768px){
+    body
+    {
+        width:1400px;height:100%;
+        /* border:1px red solid;   */
+    }
+    header{width:1400px;position: relative;}
+    #t1{
+        /* width:1000px; */
+       
+        position: absolute;left:600px;
+      width:100px;
+    }
+    #t1 img{
+        width:20vw;
+    }
+
+
+}
+
+/* 页头 */
+/* header img {
+    width: 100%;
+} */
+
+/* 导航 */
+nav {
+    background-color: rgb(7, 14, 7);
+    width:100%;
+    
+}
+
+nav:after {
+    /* 在父级元素设置清除浮动 */
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 或者专门写一个类名，专门用来清除浮动，需要的时候就往元素中添加该类名 */
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav a {
+    display:block;
+    float: left;
+    height: 50px;
+    width:12%;
+    margin-right: auto;
+    /* 100%/5个a */
+    line-height: 60px;
+    color: honeydew;
+    text-align: center;
+    font-size:20px;
+    
+}
+nav a:hover{  text-decoration: none;color: yellow;background-color: slategrey;text-decoration:none;}
+/* 正文 */
+.container {
+    background-color: #fafafa;
+    padding: 20px 0;
+}
+
+.container:after {
+    /* 在父级元素设置清除浮动 */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+.container .list {
+    width: 40%;
+    height: 400px;
+    float: left;
+    border: 2px solid #00f;
+    box-sizing: border-box;
+}
+
+/* 头部 */
+
+#t1{padding:15px;position:absolute;
+    top:2%;
+    right:50%;}
+.tt1{width:200px;height: 80px;position:absolute;
+    top:5%;
+    right:-205px;}
+
+#t2{padding:15px;position:absolute;
+        top:2%;
+        right:34%;}
+.tt2{width:200px;height: 80px;position:absolute;
+        top:5%;
+        right:-205px;}
+.tt3{width:200px;height: 100px;position:absolute;
+            top:0%;
+            left:80%;
+        background-color: gray;
+    padding: 8px;}
+
+
+/* 轮播图 */
+.container-fluid{padding:0;
+	margin:0;
+	width:100%;
+    
+}
+#myCarousel  .carousel-inner > .item > img {
+	display: block;
+	width:100%;
+	
+}
+
+/* 图层2 */
+#tc2{margin: auto;width:1400px;}
+#tc2 .col-md-12{width:400px;border-bottom: 2px red solid;text-align: center;margin-left:33%;}
+#tc2 .row {margin: auto;margin-left:0px;}
+#tc2 ul li{list-style: none;color:#acb0b4;line-height:50px;font-size: 22px;}
+/* 页脚 */

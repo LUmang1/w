@@ -1,0 +1,85 @@
+.logo{width:28px;
+     margin-top: -10px;}
+.navbar{background-color:white;}
+a{background-color:white;}
+.carousel-inner img{width: 100%;height: 50%;}
+body{background-color: gray;}
+/* 商品列表 */
+.cplist {
+	margin: 30px auto;
+}
+
+.cplist .tup {
+	position: relative;
+}
+
+.cplist .imgcp {
+	width: 100%;
+	display: block;
+}
+/* 遮罩层 */
+.cplist .tup .mask {
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, .5);
+	opacity: 0;
+}
+
+.cplist .tup:hover .mask {
+     opacity: 1;
+     
+}
+
+.cplist .tup:hover .mask p {
+	text-align: center;
+	padding-top: 30%;
+	color: #fff;
+}
+/* 手风琴 */
+.product ul li{list-style:none;}
+.product{ width: 1090px; height: 300px; margin: 0 auto; overflow: hidden;}
+.product>ul{ height: 300px; }
+.product>ul>li{ float: left;  height: 300px; border-right: solid 10px steelblue;}
+.product>ul>li>div{ width: 140px; height: 300px; float: left; background-color: steelblue; color: darkblue}
+.product>ul>li>div>span{ display: block; width: 50px; height: 50px; line-height:50px;  border: solid 3px #fff; text-align: center;margin-left:50px; margin-top: 50px; border-radius: 25px; font-size: 32px;}
+.product>ul>li>div>p{ text-align: center; margin-top:50px; font-size: 20px;}
+.product>ul>li>ul{ width: 410px; height: 260px;  padding: 20px; float: right;}
+.product>ul>li>p>ul>li{ width: 450px; }
+.hidden{display: none;}
+.imgi{width:387px;}
+/* 页脚 */
+
+.copyright-text{background-color: skyblue;width: 100%;position: relative;top:0px;right:-250px;}
+/*客服样式*/
+#menu ul li{list-style:none;}
+#menu{width:112px;position:fixed;right:-80px;top:40%;margin-top:-220px;z-index:999;}
+#menu .qqan{width:32px;height:168px;background: url(img/蔡文姬.png); no-repeat;cursor:pointer;float:left;}
+#menu ul{width:80px;height:566px;background:url(img/蔡文姬.png) no-repeat;float:left;}
+#menu ul li a{width:80px;height:80px;display:block;margin-bottom:1px;background:#EEE;-moz-opacity:0.4;filter:alpha(opacity=40);color: rgba(0, 0, 0, .5);}
+#menu ul li a:hover{-moz-opacity:0;filter:alpha(opacity=0);opacity:0;transition:all 0.5s linear;-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-o-transition:all 0.5s linear;}
+
+/* 蔡文姬 */
+#menu{
+	position: fixed;
+	right: 15px;
+	height: 300px;
+	
+}
+#menu>#cai{
+	position: absolute;
+	right:0;
+	top: 125px;
+}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* 头像特效 */
+#box>ul>li>img{width:180px;height:180px;margin:10px;}
+#box>ul>li{width:200px;float: left;list-style: none;}
+#box{ width:1300px;height:200px;margin:0 auto;}   

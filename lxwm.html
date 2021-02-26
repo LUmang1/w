@@ -1,0 +1,242 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>上海全一泵业《集团》有限公司</title>
+<!-- 移动端视图 -->
+     <!-- 引入bootstrap css -->
+     <link rel="stylesheet" href="library/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.min.css" />
+     <!-- jquery js -->
+	<script src="bootstrap/js/tabGroup.js"></script>
+	<script src="bootstrap/js/JQindex.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/bootstrap-datetimepicker.js"></script>
+     <script src="library/js/jquery-3.4.1.min.js"></script>
+     <!-- 引入boorstrap js -->
+     <script src="library/js/bootstrap.min.js"></script>
+    
+     
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/lxwm.css" />
+<style type="text/css">  
+html{height:80%;}  
+body{height:100%;margin:0px;padding:0px}  
+#container{height:80%}  
+</style>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=fe4NlFTlni3kNiI9TwIhKczxn70fOCg9">
+//v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=irpyEFaEG1w42ibmzT11suIgB6qtPM6V"
+</script>
+</head>  
+ 
+<body>  
+
+	    <!-- 头部 -->
+		<header>
+			<div class="header1" style="font-size:70px;color:crimson;">
+				<span>上海全一泵业</span>
+			</div>
+			<div id="heade">  
+		  <div id="t1">  
+			   <a href="#"> <img src="img/p10q.png" alt="地址" class="img-thumbnail"></a>
+			<div class="tt1">
+						<h4 style="color:blue;">公司联系地址：</h4>
+					   <h5>上海市松花江石湖荡</h5>
+					   <h5>唐明路600弄112栋12号-6</h5> 
+					</div> 
+			</div>
+			<div id="t2">  
+				<a href="#"> <img src="img/6o6r.png" alt="地址" class="img-thumbnail"></a>
+			 <div class="tt2">
+						 <h4 style="color:blue;">公司企业邮箱：</h4>
+						<h4>1427207618@qq.com</h4>
+					   
+					 </div> 
+			 </div>
+			</div>
+			<div class="tt3">
+				<h3 style="color:black;">全国免费热线：</h3>
+				<h3 style="color: white;">176-2183-1308</h3>
+			</div> 
+		 
+	  
+		</header>
+		<!-- 导航条 -->
+		<nav>
+			<a href="index1.html">首页</a>
+			<a href="gywm.html">关于我们</a>
+			<a href="prolist1.html">产品中心</a>
+			<a href="kfzx.html">客服中心</a> 
+			<a href="gcal.html">工程案例</a>
+			<a href="dljm.html">代理加盟</a>
+			<a href="lxwm.html">联系我们</a> 
+			<a href="gcxs.html">工厂巡视</a>
+		</nav>
+	
+	
+		<!-- 轮播图 -->
+		<div class="container clearfix">
+				<div class="container-fluid text-left" data-spy="scroll" data-target="#navbar-example" data-offset="0"
+				style=" position: relative;">
+				<!--轮播区域-->
+				<div id="myCarousel" class="carousel slide">
+					<!--轮播指标-->
+					<!--轮播项目-->
+					<div class="carousel-inner" style="width: 100%;">
+						<div class="item active" id="img1">
+							<img src="img/lunbo2.jpg" alt="First slide">
+						</div>
+						<div class="item" id="img2">
+							<img src="img/微信图片_20201014162937.png" alt="First slide">
+						</div>
+						<div class="item" id="img3">
+							<img src="img/微信图片_20201014162941.png" alt="First slide">
+						</div>
+						<div class="item" id="img4">
+							<img src="img/微信图片_20201014162945.png" alt="First slide">
+						</div>
+					</div>
+		
+				</div>
+			</div>
+			<script>
+				$('#myCarousel').carousel({//设置轮播图的播放速度
+					interval: 1000
+				})
+			</script>
+		
+		</div>
+		<hr>
+		
+<div id="container" style="width:80%;">
+
+</div> 
+<script type="text/javascript"> 
+var map = new BMap.Map("container");
+// 创建地图实例  
+var point = new BMap.Point(121.202319,30.978564);
+// 创建点坐标  
+map.centerAndZoom(point, 15);
+//创建鼠标滚动条缩放
+map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+// 初始化地图，设置中心点坐标和地图级别  
+//添加/删除工具条,比例尺控件
+var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+	// var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+	  //添加地图类型，缩略图控件
+      var mapType1 = new BMap.MapTypeControl(
+		{
+			mapTypes: [BMAP_NORMAL_MAP,BMAP_HYBRID_MAP],
+			anchor: BMAP_ANCHOR_TOP_RIGHT
+		}
+	);
+    /*缩放控件type有四种类型:
+	BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
+	
+	//添加控件和比例尺
+	function add_control(){
+		map.addControl(top_left_control);        
+		map.addControl(top_left_navigation);     
+		// map.addControl(top_right_navigation);//右上角添加方向控件   
+        map.addControl(mapType1);          //2D图，混合图
+		map.addControl(overView);          //添加默认缩略地图控件
+		map.addControl(overViewOpen);      //右下角，打开 
+	}
+	//移除控件和比例尺
+	function delete_control(){
+		map.removeControl(top_left_control);     
+		map.removeControl(top_left_navigation);  
+		// map.removeControl(top_right_navigation); //右上角删除方向控件 
+        map.removeControl(mapType1);   //移除2D图，混合图
+		map.removeControl(overView);
+		map.removeControl(overViewOpen);
+	}
+  
+
+	var overView = new BMap.OverviewMapControl();
+	var overViewOpen = new BMap.OverviewMapControl({isOpen:true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT});
+	// //添加地图类型和缩略图
+	// function add_control(){
+		
+	// }
+	// //移除地图类型和缩略图
+	// function delete_control(){
+		
+	// }
+    //创建定位功能
+    // 添加带有定位的导航控件
+//   var navigationControl = new BMap.NavigationControl({
+//     // 靠左上角位置
+//     anchor: BMAP_ANCHOR_TOP_LEFT,
+//     // LARGE类型
+//     type: BMAP_NAVIGATION_CONTROL_LARGE,
+//     // 启用显示定位
+//     enableGeolocation: true
+//   });
+//   map.addControl(navigationControl);
+//   // 添加定位控件
+//   var geolocationControl = new BMap.GeolocationControl();
+//   geolocationControl.addEventListener("locationSuccess", function(e){
+//     // 定位成功事件
+//     var address = '';
+//     address += e.addressComponent.province;
+//     address += e.addressComponent.city;
+//     address += e.addressComponent.district;
+//     address += e.addressComponent.street;
+//     address += e.addressComponent.streetNumber;
+//     alert("当前定位地址为：" + address);
+//   });
+//   geolocationControl.addEventListener("locationError",function(e){
+//     // 定位失败事件
+//     alert(e.message);
+//   });
+//   map.addControl(geolocationControl);
+  //创建城市搜索a
+
+
+var size = new BMap.Size(10, 20);
+map.addControl(new BMap.CityListControl({
+    anchor: BMAP_ANCHOR_TOP_LEFT,
+    offset: size,
+    // 切换城市之前事件
+    // onChangeBefore: function(){
+    //    alert('before');
+    // },
+    // 切换城市之后事件
+    // onChangeAfter:function(){
+    //   alert('after');
+    // }
+}));
+
+//创建弹跳动画
+var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);               // 将标注添加到地图中
+	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画  
+//创建小狐狸
+var pt = new BMap.Point(121.202319,30.978564);
+var myIcon = new BMap.Icon("img/log.pg", new BMap.Size(300,157));
+var marker2 = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+    marker2.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画  
+	map.addOverlay(marker2);              // 将标注添加到地图中
+
+    //给指定建筑添加文字注释
+var sContent ="<p>地址：上海市松花江石湖荡唐明路600弄112栋12号-6</p><p>上海全一泵业《集团》</p>电话：176-2183-1308";
+var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+	map.openInfoWindow(infoWindow,point); //开启信息窗口
+	
+</script> 
+<br>
+<br>
+<div id="r-result" style="margin-left:700px;border:1px gray solid;width:95px;background: greenyellow;">
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;添加插件</p>
+	<input type="button" onclick="add_control();" value="添加" />
+	<input type="button" onclick="delete_control();" value="删除" />
+</div>
+
+<hr> 
+<br>
+
+</body>  
+</html>
